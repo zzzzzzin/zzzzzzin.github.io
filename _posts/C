@@ -1,0 +1,62 @@
+역순 구구단 출력 프로그램 
+- 윤성우의 열혈 c 프로그래밍: p.155 문제 3번
+
+내가 적은 코드
+
+
+
+
+'''#include <stdio.h>
+
+int main(void)
+{
+	int num=0, dan=0;
+
+	printf("단을 입력하시오: ");
+	scanf("%d", &dan);
+	printf("%d단을 출력하겠습니다 \n", dan);
+	
+	int i = 1;
+	int multifly=dan*(10-i);
+
+	while (i<10)
+	{
+		printf("%d x %d = %d \n", dan, 10-i, multifly);
+		multifly -= dan;
+		i++;
+	}
+
+	return 0;
+}
+'''
+***
+교재 코드
+
+
+
+
+'''#include <stdio.h>
+
+int main(void)
+{
+	int num=0;
+	int i=9;
+
+	printf("역순으로 출력할 단 입력: ");
+	scanf("%d", &num);
+
+	while (i>0)
+	{
+		printf("%d x %d = %d \n", num, i, num*i);
+		i--;
+	}
+
+	return 0;
+}
+'''
+***
+**피드백**
+- c언어 연산자 다시 이해하기
+- 원래의 구구단을 생각하면서 했더니 복잡한 코드가 됨.
+- 간단한 코드로 고치고자 노력할 것
+- 그래도 답지 보지 않고 구문을 활용하여 해결한 인내심과 도전에 칭찬! -> 평생 지고 가야 할 마음가짐으로 여기기!
