@@ -1,0 +1,38 @@
+'''
+#include <stdio.h>
+/*
+입력 받은 정수의 평균 출력
+- 몇 개 입력할지 입력 (완료)
+- 입력 받은 정수의 함 
+- 평균 값은 소수점 이하까지 출력
+*/
+int main(void)
+{
+	int a=0;
+
+	printf("몇개 입력?: ");
+	scanf("%d", & a);
+	
+
+	int i=1,num = 0, add=0;
+	
+	printf("정수 입력: ");
+
+	
+	while (i <= a)
+	{
+		scanf("%d", &num);
+		add = add + num;
+		i++;
+	}
+	printf("입력하신 정수의 합: %d \n", add);
+
+	double value = add/a;
+	printf("입력하신 정수의 평균: %lf", value);
+
+	return 0;
+}
+'''
+***피드백***
+- 하고 싶은 명령을 한글로 적고 프로그래밍으로 표현하고자 하자
+  num에 입력받은 수와 num을 더한 값을 저장 -> a에 a와 b의 더한 값을 저장 -> a = a + b => add = add + num
