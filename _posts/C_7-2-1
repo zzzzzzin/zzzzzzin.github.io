@@ -1,0 +1,35 @@
+'''#include <stdio.h>
+
+int main(void)
+{
+
+	int a = 1;
+	int num = 0;
+	int add=0;
+
+
+	while (a <= 5)
+	{	
+		printf("%d번째, 1 이상의 정수(5개): ",a);
+		scanf("%d", &num);
+
+		while (num < 1)
+		{
+			printf("1미만의 정수를 입력하셨습니다.\n 1이상의 정수를 입력하시오.: ");
+			scanf("%d", &num);
+			//num이 1보다 크면 while문 탈출
+		}
+		add = add + num;
+		a++;
+	}
+
+	
+	printf("5개 정수의 합: %d", add);
+	
+	return 0;
+}'''
+
+***피드백***
+- 한줄 디버깅을 애용하자
+- 생각보다 너는 잘 한다.
+- 코드를 쓰다보니 점점 간결해지는게 느껴진다. 더 
