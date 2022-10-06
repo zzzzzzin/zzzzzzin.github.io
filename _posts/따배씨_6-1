@@ -1,0 +1,28 @@
+'''int main(void)
+{
+	// q 입력 전: 입력받은 정수 더하기 + 다시 입력받을 준비
+	int num = 0;
+	int sum =0;
+	int status=0;
+
+	printf("Enter an integer(q to quit) : ");
+	status = scanf("%d", &num);
+
+	while (status == 1)  // 여기서 조건 구하는 것만 풀었으면 해결인데,,ㅠ
+	{
+		sum =+ num;
+		printf("Enter next integer(q to quit) : ");
+		status=scanf("%d", &num);
+	}
+
+	// q 입력 후: while문 종료 + 모든 정수의 합을 출력
+	printf("sum=%d", sum);
+	return 0;
+}'''
+
+***피드백***
+- q만 입력했을 때, while 탈출이라고 생각하여 while문 조건 작성에서 막힘 -> 정수가 아닌 것의 입력으로 알았다면 해결했을지도
+- 참=1, 거짓=0 -> status에 scanf로 입력받은 것이 정수면 참이고 정수가 아니면 거짓 -> 숫자 증가 뿐만 아니라 입력받은 문자의 참 거짓도 활용 할 수 있음
+- 변수 이름 설정도 어렵다
+- 코딩 전 설계는 잘 했다. 구현할 지식을 제대로 이해하지 못 하고 활용하지 못 했다. 
+- 난이도가 적절하여 풀 수 있었는데 아깝다.
